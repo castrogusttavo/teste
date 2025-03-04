@@ -1,5 +1,5 @@
 import styles from "./Solicitacao.module.scss";
-import NavBar from "../navBar/NavBar";
+import NavBar from "../navbar/NavBar";
 import Home from "../../assets/Dashboard/home header.png";
 import Seta from "../../assets/Dashboard/Vector.png";
 import Deletar from "../../assets/solicitacao/deletar.png";
