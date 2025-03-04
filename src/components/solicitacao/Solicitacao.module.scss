@@ -1,0 +1,288 @@
+.layoutSolicitacao {
+  display: flex;
+}
+
+.containerPrincipalSolicitacao {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerSolicitacao {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: flex-start;
+  //border: solid;
+}
+
+.mainSolicitacao {
+  //border: solid blue;
+  width: 100%;
+  height: 90vh;
+}
+
+.formSolicitacao {
+  width: 100%;
+  // border: solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+ /*  input:hover {
+        border-color: #23282f;
+    }
+
+    //primeiro e segundo px: profundade, terceito px: esmaecimento, o quanto px: profundidade
+    input:focus {
+        border-color: #fff;
+        box-shadow: 00px 0px 5px 1px #cbd4E1;
+        }*/
+
+// estilização input/label/textarea
+
+label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #23282f;
+}
+
+input,
+select,
+textarea {
+  border-radius: 6px;
+  border: solid #cbd4e1 0.8px;
+  height: 5vh;
+  width: 100%;
+
+  &:hover {
+    border-color: #23282f;
+}
+
+//primeiro e segundo px: profundade, terceito px: esmaecimento, o quanto px: profundidade
+  &:focus {
+    border-color: #fff;
+    box-shadow: 00px 0px 5px 1px #cbd4E1;
+    }
+
+
+}
+
+//estilização grupo1
+.grupo1 {
+  //border: solid yellow;
+  width: 37%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  flex-wrap: wrap;
+}
+
+.inputNome {
+  width: 45%;
+}
+
+.inputEmpresa {
+  width: 25%;
+}
+
+.inputPrestacao {
+  width: 25%;
+}
+
+.inputMotivo {
+  width: 100%;
+}
+
+
+
+//Barra vertical
+
+.barraVertical {
+  // border: solid red;
+  background-color: #cbd4e1;
+  height: 20vh;
+  width: 0.1vw;
+  display: flex;
+}
+
+
+// estilização do grupo 2
+
+.grupo2 {
+
+  //border: solid red;
+  width: 60%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.inputData {
+  //border: solid;
+  width: 20%;
+}
+
+.imgData {
+  background-color: #001a3d; 
+  position: absolute;
+  margin-top: -1px;
+  right: 45%;   
+  top: 7.90%; 
+  transform: translateY(-8%); 
+  padding: 0.72rem; 
+  border-top-right-radius: 6px; 
+  border-bottom-right-radius: 6px; 
+}
+
+
+.tipoDeDespesa {
+  //border: solid;
+  width: 31%;
+  position: relative; /* Adiciona esta linha */
+}
+
+.imgDespesa {
+  background-color: #001a3d; 
+  position: absolute;
+  margin-top: -1px;
+  right: 0;   
+  top: 50%; 
+  transform: translateY(-50%); 
+  padding: 0.72rem; 
+  border-top-right-radius: 6px; 
+  border-bottom-right-radius: 6px; 
+}
+
+
+
+
+.centroDeCusto {
+  // border: solid;
+  width: 44%;
+}
+
+.imgCustos {
+  background-color: #001a3d; 
+  position: absolute;
+  margin-top: -1px;
+  right: 0;   
+  top: 50%; 
+  transform: translateY(-21rem); 
+  padding: 0.72rem; 
+  border-top-right-radius: 6px; 
+  border-bottom-right-radius: 6px; 
+}
+
+.ordem,
+.divisoes,
+.pep,
+.distancia {
+  //border: solid;
+  width: 9%;  
+}
+
+
+.moeda,
+.valorKM,
+.valorFaturado,
+.despesa {
+  //border: solid blue;
+  width: 12%;
+}
+
+.botoes {
+  // border: solid;
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 19px;
+
+  .botaoSalvar {
+    background-color: #001a3d;
+    color: #ffff;
+
+  }
+
+  .customerDelete {
+    width: 32%;
+    background-color: #00BEDD;
+  }
+}
+
+.containerTable{
+  margin-top: 1rem;
+  height: 60vh;
+  border: solid, #cbd4e1 1px;
+  border-radius: 2px;
+}
+
+table {
+  
+  width: 100%;
+  font-size: 1rem;
+  border-collapse: collapse;
+  border-radius: 6px;
+
+}
+
+th {
+  background-color:#F1F4F9;
+  font-weight: 400;
+  color: #23282f;
+  text-align: center;
+
+}
+
+table,
+th,
+td {
+  height: 5vh;
+  border: solid 1px #cbd4e1;
+  text-align: center;
+
+}
+
+.containerFooter{
+  width: 100%;
+  height: 7.5vh;
+  align-items: center;
+  //border: solid;
+  display: flex;
+  justify-content:  flex-end;
+  gap: 1rem;
+  margin-top: -3rem;
+  
+}
+.inputFooterFaturado,
+.inputFooterDespesa{
+  //border: solid;
+  width: 7.5vw;
+  height: 6.85vh;
+}
+
+.buttonCheck,
+.buttonX{
+  //border: solid;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  width: 13.28vw;
+  height: 5.0vh;
+  margin-top: 1.5rem;
+}
+
+.buttonCheck{
+  color: #FFFF;
+  background-color: #001a3d;
+}
+
+.buttonX{
+  color: #FFFF;
+  background-color: #a60b2f;
+}
+
